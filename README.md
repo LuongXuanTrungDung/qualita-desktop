@@ -1,2 +1,2 @@
-# qualita-desktop
-A task management system for your desktop
+# qualita-plugin
+A task management plugin for your browser
