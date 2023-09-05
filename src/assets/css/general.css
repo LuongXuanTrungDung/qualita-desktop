@@ -1,0 +1,20 @@
+/* Overriding user agent stylesheet or browser's CSS */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Customized CSS rules */
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}

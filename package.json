@@ -1,0 +1,27 @@
+{
+  "name": "qualita-plugin",
+  "version": "0.0.0",
+  "description": "A task management plugin for your browser",
+  "repository": "https://github.com/LuongXuanTrungDung/qualita.git",
+  "author": "Luong Xuan Trung Dung <luongxuantrungdung@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "run-s build:*",
+    "build:11ty": "eleventy",
+    "build:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --postcss",
+    "start": "npm-run-all -p dev:*",
+    "dev:11ty": "eleventy --serve",
+    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --watch --postcss"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "alpinejs": "^3.13.0",
+    "autoprefixer": "^10.4.15",
+    "html-minifier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
+  }
+}
